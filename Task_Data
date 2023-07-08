@@ -1,0 +1,256 @@
+--------------------------------------------------------------------------------
+db.createCollection("users");
+
+db.users.insertMany(
+[{
+  "user_id": 1,
+  "user_name": "Hema",
+  "email": "hema@gmail.com"
+},
+{
+  "user_id": 2,
+  "user_name": "Sathish",
+  "email": "sathish@gmail.com"
+},
+{
+  "user_id": 3,
+  "user_name": "Aaraasri",
+  "email": "sri@gmail.com"
+},
+{
+  "user_id": 4,
+  "user_name": "Shivani",
+  "email": "shivani@gmail.com"
+},
+{
+  "user_id": 5,
+  "user_name": "Latha",
+  "email": "latha@gmail.com"
+}])
+
+
+
+-----------------------------------------------------------------------------------
+
+db.createCollection("topics");
+
+db.topics.insertMany(
+[{
+  "topic_id": 1,
+  "topic_name": "Javascript Basics",
+  "topic_Date": "2023-10-07"
+},
+{
+  "topic_id": 2,
+  "topic_name": "HTML",
+  "topic_Date": "2023-10-12"
+},
+{
+  "topic_id": 3,
+  "topic_name": "CSS",
+  "topic_Date": "2023-10-17"
+},
+{
+  "topic_id": 4,
+  "topic_name": "Advance JS",
+  "topic_Date": "2023-10-22"
+},
+{
+  "topic_id": 5,
+  "topic_name": "React JS",
+  "topic_Date": "2023-10-25"
+},
+{
+  "topic_id": 6,
+  "topic_name": "Node JS",
+  "topic_Date": "2023-10-28"
+}])
+
+
+----------------------------------------------------------------------------------------------
+
+db.createCollection("codekata");
+
+db.codekata.insertMany(
+[{
+  "user_id": 1,
+  "problems": 200
+},
+{
+  "user_id": 2,
+  "problems": 210
+},
+{
+  "user_id": 3,
+  "problems": 230
+},
+{
+  "user_id": 4,
+  "problems": 190
+},
+{
+  "user_id": 5,
+  "problems": 195
+}])
+
+
+
+---------------------------------------------------------------------------------------------------
+
+db.createCollection("mentors")
+
+db.mentors.insertMany(
+[{
+  "mentor_id": 1,
+  "mentor_name": "Sathish",
+  "Mentee_count": 55
+},
+{
+  "mentor_id": 2,
+  "mentor_name": "Abdul",
+  "Mentee_count": 45
+},
+{
+  "mentor_id": 3,
+  "mentor_name": "Mani",
+  "Mentee_count": 43
+},
+{
+  "mentor_id": 4,
+  "mentor_name": "Nagaraj",
+  "Mentee_count": 30
+},
+{
+  "mentor_id": 5,
+  "mentor_name": "Ramya",
+  "Mentee_count": 37
+}]
+)
+
+----------------------------------------------------------------------------------------------
+
+db.craeteCollection("tasks")
+
+db.tasks.insertMany(
+[{
+  "task_id": 1,
+  "user_id": 1,
+  "topic_id": 1,
+  "Due_Date": "",
+  "submitted": true,
+  "task_name": "Javascript Basics Task"
+},
+{
+  "task_id": 2,
+  "user_id": 2,
+  "topic_id": 2,
+  "task_name": "HTML Task",
+  "Due Date": "2023-10-13",
+  "submitted": true
+},
+{
+  "task_id": 3,
+  "user_id": 3,
+  "topic_id": 3,
+  "task_name": "CSS Task",
+  "Due Date": "2023-10-18",
+  "submitted": true
+},
+{
+  "task_id": 4,
+  "user_id": 4,
+  "topic_id": 4,
+  "task_name": "Advance JS Task",
+  "Due Date": "2023-10-23",
+  "submitted": false
+},
+{
+  "task_id": 5,
+  "user_id": 5,
+  "topic_id": 5,
+  "task_name": "React JS Task",
+  "Due Date": "2023-10-26",
+  "submitted": true
+},
+{
+  "task_id": 6,
+  "user_id": 6,
+  "topic_id": 6,
+  "task_name": "Node JS Task",
+  "Due Date": "2023-10-29",
+  "submitted": false
+}]
+)
+
+------------------------------------------------------------------------------------------------------------
+
+db.createCollection("attendance")
+
+db.attendance.insertMany(
+[{
+  "user_id": 1,
+  "topic_id": 1,
+  "attended": true
+},
+{
+  "user_id": 2,
+  "topic_id": 2,
+  "attended": true
+},
+{
+  "user_id": 3,
+  "topic_id": 3,
+  "attended": true
+},
+{
+  "user_id": 4,
+  "topic_id": 4,
+  "attended": false
+},
+{
+  "user_id": 5,
+  "topic_id": 5,
+  "attended": false
+},
+{
+  "user_id": 6,
+  "topic_id": 6,
+  "attended": false
+}]
+)
+
+-------------------------------------------------------------------------------------------
+db.createCollection("attendance")
+
+db.attendance.insertMany(
+[{
+  "user_id": 1,
+  "drive_Date": "2023-10-17",
+  "company_Name": "CTS"
+},
+{
+  "user_id": 2,
+  "drive_Date": "2023-10-19",
+  "company_Name": "Infosys"
+},
+{
+  "user_id": 3,
+  "drive_Date": "2023-10-21",
+  "company_Name": "Zoho"
+},
+{
+  "user_id": 4,
+  "drive_Date": "2023-10-23",
+  "company_Name": "Accenture"
+},
+{
+  "user_id": 1,
+  "drive_Date": "2023-10-25",
+  "company_Name": "Amazon"
+},
+{
+  "user_id": 3,
+  "drive_Date": "2023-11-03",
+  "company_Name": "TCS"
+}]
+)
